@@ -1,12 +1,165 @@
-/* basic sintaxe
-    Selector {Property values}
+/* Definições básicas de corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Seções com margens e padding */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Estilos para os títulos */
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Estilos para parágrafos */
+p {
+    margin: 10px 0;
+}
+
+/* Lista ordenada e não ordenada */
+ol, ul {
+    margin: 10px 0;
+    padding: 0 0 0 20px;
+}
+
+/* Listas dentro de listas */
+ol ol, ul ul, ol ul, ul ol {
+    margin: 0;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Imagens com largura específica */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Estilo do link */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulários */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Vídeo */
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Áudio */
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Progresso e medidores */
+progress,
+meter {
+    width: 100%;
+    height: 20px;
+}
+
+/* Icones */
+.fa-virus-covid-slash {
+    color: red;
+}
+
+/* Sombra em caixas */
+.box-shadow-example {
+    box-shadow: 10px 9px 9px rgba(17, 11, 11, 0.1);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Sombra em seção inline */
+section[style] {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+/*CSS Inheritance In Depth*/
+
+#inherit {
+    box-shadow: 10px 9px 9px rgba(17, 11, 11, 0.1);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/*
+Em CSS, "inheritance" refere-se à transmissão automática de certos estilos dos elementos pais para os elementos filhos. Propriedades como color, font-family, e text-align são herdadas por padrão. Propriedades não herdáveis incluem width, height, e background-color. A palavra-chave inherit força um elemento a herdar explicitamente uma propriedade do pai. Entender a herança é essencial para aplicar estilos de forma eficiente em CSS.
 */
 
+#parent {
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    width: 100px;
+    height: 100px;
+    background: teal;
 
-h2 {
-    color: cadetblue;
 }
 
-h3 {
-    color
+#children {
+    position: relative;
+    left: 100px;
+    /*Not recomended - inherit*/
+    background: inherit;
+    width: inherit;
+    height: inherit;
 }
+
+
+/*Position*/
+
+
+
+/*Flex box*/

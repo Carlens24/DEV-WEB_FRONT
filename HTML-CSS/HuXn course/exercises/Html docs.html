@@ -4,222 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css docs.css">
-
-<!--Internal css test-->    
-    <!--<style>
-        /* basic sintaxe
-        Selector {Property values}
-        */
-        h2 {background-color: burlywood;}
-        h3 {background-color: cadetblue;}
-        p {color: darkcyan;}
-    </style>
-    -->
-    
-    <title>HTML & Css Docs</title>
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HTML & CSS Docs</title>
 </head>
 <body>
+    <div class="container">
+        <!-- Headings Section -->
+        <section id="headings" class="section">
+            <h2>Headings</h2>
+            <p>HTML provides six levels of headings, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+            <h1>Heading One</h1>
+            <h2>Heading Two</h2>
+            <h3>Heading Three</h3>
+            <h4>Heading Four</h5>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+        </section>
 
-    <!-- Headings Section -->
-    <section>
-        <h2>Headings</h2>
-        <p>HTML provides six levels of headings, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, with <code>&lt;h1&gt;</code> being the highest and <code>&lt;h6&gt;</code> the lowest.</p>
-        <h1>Heading One</h1>
-        <h2>Heading Two</h2>
-        <h3>Heading Three</h3>
-        <h4>Heading Four</h4>
-        <h5>Heading Five</h5>
-        <h6>Heading Six</h6>
-    </section>
+        <!-- Paragraph Section -->
+        <section id="paragraphs" class="section">
+            <h2>Paragraphs</h2>
+            <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+            <p>This is a paragraph.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
 
-    <!-- Paragraph Section -->
-    <section>
-        <h2>Paragraphs</h2>
-        <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
-        <p>This is a paragraph.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit harum porro qui itaque velit minima pariatur!</p>
-    </section>
+        <!-- Lists Section -->
+        <section id="lists" class="section">
+            <h2>Lists</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>SASS</li>
+                <li>React</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>SASS</li>
+                <li>React</li>
+            </ul>
+            <h3>Nested List</h3>
+            <ol>
+                <li>Programming Languages
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                    </ul>
+                </li>
+                <li>Databases
+                    <ol>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
 
-    <!-- Lists Section -->
-    <section>
-        <h2>Lists</h2>
-        
-        <!-- Ordered List -->
-        <h3>Ordered List</h3>
-        <ol>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>SASS</li>
-            <li>React</li>
-        </ol>
-        
-        <!-- Unordered List -->
-        <h3>Unordered List</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>SASS</li>
-            <li>React</li>
-        </ul>
+        <!-- Images Section -->
+        <section id="images" class="section">
+            <h2>Images</h2>
+            <p>Images can be added using the <code>&lt;img&gt;</code> tag.</p>
+            <img src="images & videos/3948234.jpg" alt="Local image" width="474px">
+            <img src="https://wallpapercave.com/wp/wp9259176.jpg" alt="Remote image">
+            <img src="https://c.tenor.com/dFRmjNDK9TwAAAAC/ghibli.gif" alt="GIF image" width="474px">
+        </section>
 
-        <!-- Nested List -->
-        <h3>Nested List</h3>
-        <ol>
-            <li>Programming Languages
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>C++</li>
-                    <li>C#</li>
-                </ul>
-            </li>
-            <li>Databases
-                <ol>
-                    <li>SQL</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                </ol>
-            </li>
-        </ol>
-    </section>
+        <!-- Links and Hyperlinks Section -->
+        <section id="links" class="section">
+            <h2>Links and Hyperlinks</h2>
+            <p>Links are created using the <code>&lt;a&gt;</code> tag.</p>
+            <p>Check this website: <a href="https://torgamez.com/" target="_blank">Click here!!</a></p>
+            <p>Check my <a href="hyperlink-test.html">website test</a></p>
+        </section>
 
-    <!-- Images Section -->
-    <section>
-        <h2>Images</h2>
-        <p>Images can be added using the <code>&lt;img&gt;</code> tag.</p>
-        
-        <!-- Local Image -->
-        <img src="images & videos/3948234.jpg" alt="Local image" width="474px">
-        
-        <!-- Remote Image -->
-        <img src="https://th.bing.com/th/id/OIP.hvUcg-VpU8bEaaU2otyICAAAAA?rs=1&pid=ImgDetMain" alt="Remote image">
-        
-        <!-- GIF Image -->
-        <img src="https://th.bing.com/th/id/R.868086b8801839a4321af7dc1dfe8124?rik=HngQRWhfH2MBSw&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fFDwRpQzXOBMNa%2fgiphy.gif&ehk=9FnPizRRsDUM7wbrtJb0PIwY9XIfz08eLfAcXjjFkjU%3d&risl=&pid=ImgRaw&r=0" alt="GIF image" width="474px">
-    </section>
+        <!-- Form Section -->
+        <section id="forms" class="section">
+            <h2>Forms</h2>
+            <p>Forms are used to collect user input and are created using the <code>&lt;form&gt;</code> tag.</p>
+            <form>
+                <label for="email">Email:</label>
+                <input placeholder="Email" type="email" id="email"><br>
+                <label for="password">Password:</label>
+                <input placeholder="Password" type="password" id="password"><br>
+                <label>Gender:</label><br>
+                <p>M<input type="checkbox"></p>
+                <p>F<input type="checkbox"></p>
+                <input type="button" value="Voltar">
+                <input type="submit">
+            </form>
+        </section>
 
-    <!-- Links and Hyperlinks Section -->
-    <section>
-        <h2>Links and Hyperlinks</h2>
-        <p>Links are created using the <code>&lt;a&gt;</code> tag.</p>
-        <p>Check this website: <a href="https://torgamez.com/" target="_blank">Click here!!</a></p>
-        <p>Check my <a href="hyperlink-test.html">website test</a></p>
-    </section>
+        <!-- Video Section -->
+        <section id="video" class="section">
+            <h2>Video</h2>
+            <p>Videos can be embedded using the <code>&lt;video&gt;</code> tag.</p>
+            <video controls src="https://youtu.be/z9Ug-3qhrwY" width="474"></video>
+        </section>
 
-    <!-- Form Section -->
-    <section>
-        <h2>Forms</h2>
-        <p>Forms are used to collect user input and are created using the <code>&lt;form&gt;</code> tag.</p>
-        <form>
-            <label for="email">Email:</label>
-            <input placeholder="Email" type="email" id="email"><br>
+        <!-- Audio Section -->
+        <section id="audio" class="section">
+            <h2>Audio</h2>
+            <p>Audio files can be embedded using the <code>&lt;audio&gt;</code> tag.</p>
+            <audio controls src="images & videos/WIU - Limão.mp3"></audio>
+        </section>
+
+        <!-- Semantic HTML Section -->
+        <section id="semantic-html" class="section">
+            <h2>Semantic HTML</h2>
+            <p>Semantic HTML elements provide meaning to the web page.</p>
+            <p>Click here: <a href="semantic.html">Semantic HTML</a></p>
+        </section>
+
+        <!-- Typography Tags Section -->
+        <section id="typography" class="section">
+            <h2>Typography Tags</h2>
+            <p>Examples of various typography tags:</p>
+            <p><b>Bold Text</b></p>
+            <p><strong>Strong Text</strong></p>
+            <p><i>Italic Text</i></p>
+            <p><em>Emphasized Text</em></p>
+            <p><mark>Highlighted Text</mark></p>
+            <p><code>Code Snippet</code></p>
+            <p><pre>Preformatted Text</pre></p>
+            <p><del>Deleted Text</del></p>
+            <p><ins>Inserted Text</ins></p>
+        </section>
+
+        <!-- Additional HTML Elements Section -->
+        <section id="additional-elements" class="section">
+            <h2>Additional HTML Elements</h2>
+            <p><q>Quote Text</q>, example of quotation.</p>
+            <p>Lorem <abbr title="Dummy text!!!">ipsum</abbr> dolor sit amet, consectetur adipisicing elit.</p>
+            <blockquote>"This is a long quote example, used to demonstrate the blockquote element."</blockquote>
+            <p>This is a reference to a <cite>famous work</cite>.</p>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables" class="section">
+            <h2>Tables</h2>
+            <p>Tables are created using the <code>&lt;table&gt;</code> tag.</p>
+            <table class="styled-table">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Iframe Section -->
+        <section id="iframe" class="section">
+            <h2>Iframe</h2>
+            <p>Iframes are used to embed another document within the current HTML document.</p>
+            <iframe src="https://www.example.com" width="600" height="400" title="Example Iframe"></iframe>
+        </section>
+
+        <!-- Progress and Meter Section -->
+        <section id="progress-meter" class="section">
+            <h2>Progress and Meter</h2>
+            <p>The <code>&lt;progress&gt;</code> element represents the completion progress of a task.</p>
+            <label for="file">File progress:</label>
+            <progress id="file" value="32" max="100">32%</progress>
+            <p>The <code>&lt;meter&gt;</code> element represents a scalar measurement within a known range.</p>
+            <meter value="0.7">70%</meter>
+        </section>
+
+        <!-- Inline CSS Section -->
+        <section id="inline-css" class="section" style="background-color: #e0e0e0; padding: 10px;">
+            <h2>Inline CSS</h2>
+            <p>This section is styled with inline CSS.</p>
+        </section>
+
+        <!-- Icons Section -->
+        <section id="icons" class="section">
+            <h2>Icons</h2>
+            <p>Icons can be added using the Font Awesome library.</p>
+            <p>important links: <a href="https://fontawesome.com/icons/virus-covid-slash?f=classic&s=solid">Font Awesome / <a href="https://cdnjs.com/">cdnjs</a></a></p>
+            <i class="fas fa-virus-covid-slash"></i>
+        </section>
+
+        <!-- Shadows Section -->
+        <section id="shadows" class="section">
+            <h2>Shadows</h2>
+            <p>Box-shadow effect:</p>
+            <p class="box-shadow-example">Example with box shadow.</p>
+        </section>
+
+        <section id="Inheritance" class="section">
+            <h2>Inheritance</h2>
+            <p></p>
+        <!--CSS Inheritance-->
+        <div id="parent">
+            Hello
+                <div id="children">World!</div>
+        </div>
+        </section>
+
+
+        <!--Flexbox-->
+        <sectio id="flexbox" class="section">
+            <h2>Inheritance</h2>
+
+        </section>
+
+        <!--Flexbox-->
+        <sectio id="flexbox" class="section">
+            <h2>Inheritance</h2>
             
-            <label for="password">Password:</label>
-            <input placeholder="Password" type="password" id="password"><br>
+        </section>
+
+        <!--Flexbox-->
+        <sectio id="flexbox" class="section">
+            <h2>Inheritance</h2>
             
-            <label>Gender:</label><br>
-            <p>M<input type="checkbox"></p>
-            <p>F<input type="checkbox"></p>
+        </section>
+
+        <!--Flexbox-->
+        <sectio id="flexbox" class="section">
+            <h2>Inheritance</h2>
             
-            <input type="button" value="Voltar">
-            <input type="submit">
-        </form>
-    </section>
+        </section>
 
-    <!-- Video Section -->
-    <section>
-        <h2>Video</h2>
-        <p>Videos can be embedded using the <code>&lt;video&gt;</code> tag.</p>
-        <video controls src="images & videos/856033-hd_1280_720_30fps.mp4" width="474"></video>
-    </section>
-
-    <!-- Audio Section -->
-    <section>
-        <h2>Audio</h2>
-        <p>Audio files can be embedded using the <code>&lt;audio&gt;</code> tag.</p>
-        <audio controls src="images & videos/WIU - Limão.mp3"></audio>
-    </section>
-
-    <!-- Semantic HTML Section -->
-    <section>
-        <h2>Semantic HTML</h2>
-        <p>Semantic HTML elements provide meaning to the web page. For example:</p>
-        <p>Click here: <a href="semantic.html">Semantic HTML</a></p>
-    </section>
-
-    <!-- Typography Tags Section -->
-    <section>
-        <h2>Typography Tags</h2>
-        <p>Below are examples of various typography tags:</p>
-        <p><b>Bold Text</b></p>
-        <p><strong>Strong Text</strong></p>
-        <p><i>Italic Text</i></p>
-        <p><em>Emphasized Text</em></p>
-        <p><mark>Highlighted Text</mark></p>
-        <p><code>Code Snippet</code></p>
-        <p><pre>Preformatted Text</pre></p>
-        <p><del>Deleted Text</del></p>
-        <p><ins>Inserted Text</ins></p>
-    </section>
-
-    <!-- Additional HTML Elements Section -->
-    <section>
-        <h2>Additional HTML Elements</h2>
-        <p><q>Quote Text</q>, example of quotation.</p>
-        <p>Lorem <abbr title="Dummy text!!!">ipsum</abbr> dolor sit amet, consectetur adipisicing elit. Excepturi, aliquam facilis earum ipsa eos ut.</p>
-        <blockquote>
-            "This is a long quote example, used to demonstrate the blockquote element."
-        </blockquote>
-        <p>This is a reference to a <cite>famous work</cite>.</p>
-    </section>
-
-    <!-- Tables Section -->
-    <section>
-        <h2>Tables</h2>
-        <p>Tables are created using the <code>&lt;table&gt;</code> tag.</p>
-        <table border="1">
-            <caption>Sample Table</caption>
-            <thead>
-                <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Data 1</td>
-                    <td>Data 2</td>
-                    <td>Data 3</td>
-                </tr>
-                <tr>
-                    <td>Data 4</td>
-                    <td>Data 5</td>
-                    <td>Data 6</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Iframe Section -->
-    <section>
-        <h2>Iframe</h2>
-        <p>Iframes are used to embed another document within the current HTML document.</p>
-        <iframe src="https://www.example.com" width="600" height="400" title="Example Iframe"></iframe>
-    </section>
-
-    <!-- Progress and Meter Section -->
-    <section>
-        <h2>Progress and Meter</h2>
-        <p>The <code>&lt;progress&gt;</code> element represents the completion progress of a task.</p>
-        <label for="file">File progress:</label>
-        <progress id="file" value="32" max="100">32%</progress>
-
-        <p>The <code>&lt;meter&gt;</code> element represents a scalar measurement within a known range.</p>
-        
-
-    <!--Inline Css-->
-    <section style="color: purple;">
-        <p>Lorem ipsum dolor sit amet.</p>
-    </section>
+    </div>
+</body>
+</html>
