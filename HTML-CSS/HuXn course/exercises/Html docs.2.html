@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css docs.2.css">
+    <title>HTML & CSS Guide</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Position Properties Section -->
+        <section id="position-properties" class="section">
+            <h2>Position Properties</h2>
+            <p>A propriedade `position` define como um elemento é posicionado no documento. Os valores mais comuns são:</p>
+            <ul>
+                <li><strong>static</strong>: Padrão. Elementos são posicionados de acordo com o fluxo normal do documento.</li>
+                <li><strong>relative</strong>: Posicionado relativo à sua posição normal.</li>
+                <li><strong>absolute</strong>: Posicionado em relação ao antecessor mais próximo com `position` diferente de `static`.</li>
+                <li><strong>fixed</strong>: Posicionado em relação à janela do navegador.</li>
+                <li><strong>sticky</strong>: Alterna entre `relative` e `fixed` com base no scroll.</li>
+            </ul>
+            <div class="position-example">
+                <div class="position-static">Static</div>
+                <div class="position-relative">Relative</div>
+                <div class="position-absolute">Absolute</div>
+                <div class="position-fixed">Fixed</div>
+                <div class="position-sticky">Sticky</div>
+            </div>
+        </section>
+
+        <!-- Master CSS Flexbox Section -->
+        <section id="flexbox" class="section">
+            <h2>Master CSS Flexbox</h2>
+            <p>Flexbox é um modelo de layout unidimensional que facilita a distribuição de espaço entre itens em um contêiner e melhora a capacidade de alinhamento.</p>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <!-- Flexbox Froggy Section -->
+        <section id="flexbox-froggy" class="section">
+            <h2>Flexbox Froggy</h2>
+            <p>Pratique Flexbox com o jogo <a href="https://flexboxfroggy.com/">Flexbox Froggy</a>.</p>
+        </section>
+
+        <!-- Master CSS Grid Section -->
+        <section id="grid" class="section">
+            <h2>Master CSS Grid</h2>
+            <p>CSS Grid é um sistema de layout bidimensional que facilita a criação de layouts complexos.</p>
+            <div class="grid-container">
+                <div class="grid-item">Item 1</div>
+                <div class="grid-item">Item 2</div>
+                <div class="grid-item">Item 3</div>
+                <div class="grid-item">Item 4</div>
+                <div class="grid-item">Item 5</div>
+                <div class="grid-item">Item 6</div>
+            </div>
+        </section>
+
+        <!-- Grid Garden Game Section -->
+        <section id="grid-garden" class="section">
+            <h2>Grid Garden Game</h2>
+            <p>Pratique CSS Grid com o jogo <a href="https://cssgridgarden.com/">Grid Garden</a>.</p>
+        </section>
+
+        <!-- CSS Calc Function Section -->
+        <section id="css-calc" class="section">
+            <h2>CSS Calc Function</h2>
+            <p>A função `calc()` permite calcular valores CSS dinamicamente. Por exemplo, podemos definir a largura de um elemento como uma porcentagem menos um valor fixo.</p>
+            <div class="calc-example">Width: calc(50% - 20px)</div>
+        </section>
+
+        <!-- Master CSS Mix-blend-mode Section -->
+        <section id="mix-blend-mode" class="section">
+            <h2>Master CSS Mix-blend-mode</h2>
+            <p>A propriedade `mix-blend-mode` define como o conteúdo de um elemento deve ser misturado com o conteúdo do elemento de fundo.</p>
+            <div class="blend-mode-example">
+                <img src="images/background.jpg" alt="Background Image">
+                <div class="blend-text">Blend Text</div>
+            </div>
+        </section>
+
+        <!-- CSS :is() Function Section -->
+        <section id="css-is" class="section">
+            <h2>CSS :is() Function</h2>
+            <p>A pseudo-classe `:is()` permite combinar várias seleções em uma única regra de estilo.</p>
+            <p class="is-function">Esta frase está estilizada usando :is()</p>
+        </section>
+
+        <!-- CSS ::before and ::after Section -->
+        <section id="before-after" class="section">
+            <h2>CSS ::before and ::after</h2>
+            <p>As pseudo-classes `::before` e `::after` permitem inserir conteúdo antes ou depois do conteúdo de um elemento.</p>
+            <div class="before-after-example">Before and After Example</div>
+        </section>
+
+        <!-- CSS :not() Function Section -->
+        <section id="css-not" class="section">
+            <h2>CSS :not() Function</h2>
+            <p>A pseudo-classe `:not()` estiliza elementos que não correspondem a um seletor.</p>
+            <p class="not-function">Este é um parágrafo normal.</p>
+            <p class="not-function special">Este parágrafo é especial.</p>
+        </section>
+
+        <!-- CSS Variables In Depth Section -->
+        <section id="css-variables" class="section">
+            <h2>CSS Variables In Depth</h2>
+            <p>As variáveis CSS, ou custom properties, permitem armazenar valores que podem ser reutilizados em todo o documento.</p>
+            <div class="variable-example">Exemplo de Variáveis CSS</div>
+        </section>
+
+        <!-- DRY CSS Section -->
+        <section id="dry-css" class="section">
+            <h2>DRY CSS</h2>
+            <p>O princípio DRY (Don't Repeat Yourself) no CSS evita duplicação de código, melhorando a manutenção e legibilidade.</p>
+            <p class="dry-example">Usando princípios DRY em CSS.</p>
+        </section>
+
+        <!-- CSS Transformations, Transitions, and Animations In Depth Section -->
+        <section id="transitions-animations" class="section">
+            <h2>CSS Transformations, Transitions, and Animations In Depth</h2>
+            <p>Transformações, transições e animações em CSS permitem adicionar efeitos dinâmicos e interativos aos elementos.</p>
+            <div class="transform-example">Exemplo de Transformação</div>
+            <div class="transition-example">Passe o mouse sobre mim!</div>
+            <div class="animation-example">Exemplo de Animação</div>
+        </section>
+
+        <!-- CSS Media Queries Section -->
+        <section id="media-queries" class="section">
+            <h2>CSS Media Queries</h2>
+            <p>Media queries permitem aplicar estilos CSS diferentes com base em condições como largura da tela.</p>
+            <p class="media-query-example">Redimensione a janela para ver as media queries em ação.</p>
+        </section>
+
+        <!-- Master HTML and CSS Emits Section -->
+        <section id="emits" class="section">
+            <h2>Master HTML and CSS Emits</h2>
+            <p>Utilize ferramentas como Emmet para acelerar a codificação HTML e CSS. Emmet permite expandir abreviações em trechos de código completos.</p>
+        </section>
+    </div>
+</body>
+</html>

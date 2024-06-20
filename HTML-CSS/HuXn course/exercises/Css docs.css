@@ -1,4 +1,4 @@
-/* Definições básicas de corpo */
+/* Estilos básicos do corpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,8 +7,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Seções com margens e padding */
-section {
+/* Estilos das seções */
+.section {
     margin: 20px;
     padding: 20px;
     background: #fff;
@@ -17,7 +17,7 @@ section {
     cursor: pointer;
 }
 
-/* Estilos para os títulos */
+/* Estilos para títulos h2 */
 h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
@@ -28,18 +28,13 @@ p {
     margin: 10px 0;
 }
 
-/* Lista ordenada e não ordenada */
+/* Estilos para listas ordenadas e não ordenadas */
 ol, ul {
     margin: 10px 0;
     padding: 0 0 0 20px;
 }
 
-/* Listas dentro de listas */
-ol ol, ul ul, ol ul, ul ol {
-    margin: 0;
-}
-
-/* Tabelas */
+/* Estilos para tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -52,14 +47,14 @@ th, td {
     text-align: left;
 }
 
-/* Imagens com largura específica */
+/* Estilos para imagens */
 img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
 }
 
-/* Estilo do link */
+/* Estilos para links */
 a {
     color: #333;
     text-decoration: none;
@@ -69,7 +64,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Formulários */
+/* Estilos para formulários e inputs */
 form {
     margin: 20px 0;
 }
@@ -85,32 +80,32 @@ textarea {
     border-radius: 4px;
 }
 
-/* Vídeo */
+/* Estilos para vídeo */
 video {
     display: block;
     margin: 20px auto;
     max-width: 100%;
 }
 
-/* Áudio */
+/* Estilos para áudio */
 audio {
     display: block;
     margin: 20px auto;
 }
 
-/* Progresso e medidores */
+/* Estilos para progresso e medidores */
 progress,
 meter {
     width: 100%;
     height: 20px;
 }
 
-/* Icones */
+/* Estilos para o ícone Font Awesome */
 .fa-virus-covid-slash {
     color: red;
 }
 
-/* Sombra em caixas */
+/* Exemplo de sombra em caixas */
 .box-shadow-example {
     box-shadow: 10px 9px 9px rgba(17, 11, 11, 0.1);
     padding: 10px;
@@ -118,25 +113,13 @@ meter {
     border-radius: 4px;
 }
 
-/* Sombra em seção inline */
+/* Estilos para seções com inline CSS */
 section[style] {
     background-color: #e0e0e0;
     padding: 10px;
 }
 
-/*CSS Inheritance In Depth*/
-
-#inherit {
-    box-shadow: 10px 9px 9px rgba(17, 11, 11, 0.1);
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-/*
-Em CSS, "inheritance" refere-se à transmissão automática de certos estilos dos elementos pais para os elementos filhos. Propriedades como color, font-family, e text-align são herdadas por padrão. Propriedades não herdáveis incluem width, height, e background-color. A palavra-chave inherit força um elemento a herdar explicitamente uma propriedade do pai. Entender a herança é essencial para aplicar estilos de forma eficiente em CSS.
-*/
-
+/* Exemplo de CSS Inheritance */
 #parent {
     color: orange;
     font-family: sans-serif;
@@ -145,21 +128,26 @@ Em CSS, "inheritance" refere-se à transmissão automática de certos estilos do
     width: 100px;
     height: 100px;
     background: teal;
-
 }
 
 #children {
     position: relative;
     left: 100px;
-    /*Not recomended - inherit*/
     background: inherit;
     width: inherit;
     height: inherit;
 }
 
+/* Estilos para a seção Position */
+.position {
+    box-shadow: 10px 9px 9px rgba(17, 11, 11, 0.1);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
-/*Position*/
-
-
-
-/*Flex box*/
+.container {
+    background: rebeccapurple;
+    width: 90%;
+    height: 500px;
+}

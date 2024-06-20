@@ -1,0 +1,223 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* Position Properties */
+.position-example {
+    position: relative;
+    height: 200px;
+    margin: 20px 0;
+}
+.position-static {
+    position: static;
+    background-color: #ffcccb;
+    padding: 10px;
+    margin: 5px;
+}
+.position-relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #add8e6;
+    padding: 10px;
+    margin: 5px;
+}
+.position-absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #90ee90;
+    padding: 10px;
+    margin: 5px;
+}
+.position-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffa500;
+    padding: 10px;
+    margin: 5px;
+}
+.position-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ffe4b5;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Master CSS Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px;
+}
+.flex-item {
+    background-color: #add8e6;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Master CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #ddd;
+    padding: 10px;
+}
+.grid-item {
+    background-color: #add8e6;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* CSS Calc Function */
+.calc-example {
+    width: calc(50% - 20px);
+    background-color: #ffcccb;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Master CSS Mix-blend-mode */
+.blend-mode-example {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.blend-mode-example img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.blend-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    font-size: 2em;
+}
+
+/* CSS :is() Function */
+.is-function:is(p, h2) {
+    color: #ff4500;
+    background-color: #ffe4b5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* CSS ::before and ::after */
+.before-after-example::before {
+    content: 'Before ';
+    color: #fff;
+    background-color: #ff4500;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.before-after-example::after {
+    content: ' After';
+    color: #fff;
+    background-color: #ff4500;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+/* CSS :not() Function */
+.not-function {
+    color: #333;
+}
+.not-function:not(.special) {
+    background-color: #ffffe0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* CSS Variables In Depth */
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333;
+    --main-padding: 20px;
+}
+.variable-example {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: var(--main-padding);
+    border-radius: 5px;
+}
+
+/* DRY CSS */
+.dry-example {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    padding: var(--main-padding);
+    border-radius: 5px;
+}
+
+/* CSS Transformations, Transitions, and Animations In Depth */
+.transform-example {
+    transform: rotate(45deg);
+    background-color: #90ee90;
+    padding: 20px;
+    text-align: center;
+}
+.transition-example {
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.transition-example:hover {
+    background-color: #ffcccb;
+}
+@keyframes example-animation {
+    from { background-color: #90ee90; }
+    to { background-color: #ffcccb; }
+}
+.animation-example {
+    background-color: #90ee90;
+    padding: 20px;
+    text-align: center;
+    animation: example-animation 2s infinite alternate;
+}
+
+/* CSS Media Queries */
+.media-query-example {
+    background-color: #90ee90;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .media-query-example {
+        background-color: #ffcccb;
+    }
+}
