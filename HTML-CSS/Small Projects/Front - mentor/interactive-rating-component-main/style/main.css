@@ -1,0 +1,235 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --primary-color: hsl(216, 12%, 54%);
+  --secundary-color: hsl(25, 97%, 53%);
+  --select-state: hsl(217, 12%, 63%);
+  --bg-card: hsl(213, 20%, 18%);
+  --bg-color: hsl(216, 12%, 8%);
+  --bg-secondary: hsla(216, 12%, 54%, 0.1);
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+/* Fist state */
+
+.raiting-card {
+  box-sizing: content-box;
+  width: 20em;
+  height: 21.5em;
+  padding: 1.5em;
+  font-weight: 400;
+  background-color: var(--bg-card);
+  background: radial-gradient(
+    circle at 50% 0%,
+    hsla(213, 20%, 18%) 0%,
+    hsl(213, 32%, 10%) 100%
+  );
+  border-radius: 1em;
+}
+
+.raiting-card__start {
+  display: block;
+  padding: 0.75em;
+  width: 1em;
+  background-color: var(--bg-secondary);
+  border-radius: 50%;
+}
+
+.raiting-card__question {
+  display: block;
+  margin: 1em 0;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.raiting-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.8em 0;
+}
+
+.raiting-card-buttons__button {
+  box-sizing: content-box;
+  width: 2.8em;
+  padding: 0;
+  aspect-ratio: 1;
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: var(--bg-secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.raiting-card-buttons__button--select {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  .raiting-card-buttons__button:hover {
+    background-color: var(--secundary-color);
+    color: var(--white);
+  }
+}
+
+@media (hover: none) {
+  .raiting-card-buttons__button:active {
+    background-color: var(--secundary-color);
+    color: var(--white);
+  }
+}
+
+.raiting-card__submit {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 0.75em;
+  background-color: var(--secundary-color);
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (hover: hover) {
+  .raiting-card__submit:hover {
+    background-color: var(--white);
+    color: var(--secundary-color);
+  }
+}
+
+@media (hover: none) {
+  .raiting-card__submit:active {
+    background-color: var(--white);
+    color: var(--secundary-color);
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .raiting-card {
+    width: 22em;
+    height: 21em;
+    padding: 2em;
+    border-radius: 1.8em;
+  }
+
+  .raiting-card__start {
+    padding: 1em;
+    width: 1em;
+  }
+
+  .raiting-card__question {
+    margin: 1em 0 0.5em 0;
+    font-size: 1.85rem;
+  }
+
+  .raiting-card-buttons__button {
+    width: 3.1em;
+    border-radius: 50%;
+  }
+
+  .raiting-card__submit {
+    margin-bottom: 0;
+    padding: 0.75em 0;
+  }
+}
+
+/* Second state */
+
+.raiting-card--ty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.raiting-card__answer {
+  padding: 0.5em 1em;
+  margin: 1em;
+  color: var(--secundary-color);
+  font-style: normal;
+  background-color: var(--bg-secondary);
+  border-radius: 1em;
+}
+
+.raiting-card__thanks {
+  display: block;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.raiting-card__description--ty {
+  margin: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .raiting-card--ty {
+    width: 22.5em;
+    height: 21em;
+    padding: 2em 1.75em;
+  }
+}
+
+.raiting-card--hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+@media (hover: hover) {
+  .attribution a:hover {
+    color: var(--secundary-color);
+  }
+}
+
+@media (hover: none) {
+  .attribution a:active {
+    color: var(--secundary-color);
+  }
+}

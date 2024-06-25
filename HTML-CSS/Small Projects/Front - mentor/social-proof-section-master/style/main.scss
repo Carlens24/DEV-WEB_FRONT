@@ -1,0 +1,291 @@
+:root{
+    /* Primary Colors */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    /* Neutral Colors */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4em 2em;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    row-gap: 3em;
+    padding: 0em 4em;
+    font-weight: 500;
+}
+
+//
+.principal{
+    .title{
+        padding-right: 4em;
+        color: var(--Very-Dark-Magenta);
+        font-size: 3rem;
+    }
+    .describe{
+        padding-right: 12em;
+        color: var(--Dark-Grayish-Magenta);
+        line-height: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+//
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1em;
+    .stats{
+        display: flex;
+        align-items: center;
+        width: 29em;
+        padding: 1.3em;
+        background-color: var(--Light-Grayish-Magenta);
+        border-radius: 10px;
+        &__stars{
+            padding: 0 1em;
+        }
+        &__rated{
+            margin: 0;
+            margin-left: 1em;
+            font-weight: 700;
+            color: var(--Very-Dark-Magenta);
+        }
+        &--first{
+            @extend .stats;
+            position: relative;
+            right: 8em;
+        }
+        &--second{
+            @extend .stats;
+            position: relative;
+            right: 4em;
+        }
+        &--third{
+            @extend .stats;
+        }
+    }
+}
+
+//
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1/3;
+    .card{
+        box-sizing: border-box;
+        padding: 2.2em;
+        max-width: 27em;
+        background: var(--Very-Dark-Magenta);
+        border-radius: 8px;
+        &__img{
+            display: block;
+            float: left;
+            margin-right: 1.8em;
+            width: 3.2em;
+            border-radius: 50%;
+        }
+        &__data{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 3.5em;
+        }
+        &__name{
+            display: inline;
+            color: var(--White);
+            font-weight: 700;
+        }
+        &__status{
+            display: inline;
+            font-weight: 400;
+            color: var(--Soft-Pink);
+        }
+        &__opinion{
+            clear: both;
+            margin: 0;
+            margin-top: 1.8em;
+            padding: 0;            
+            font-weight: 500;
+            line-height: 1.5em;
+            color: var(--Light-Grayish-Magenta);
+        }
+        &--first{
+            @extend .card;
+            position: relative;
+            top: -1em;
+        }
+        &--second{
+            @extend .card;
+        }
+        &--third{
+            @extend .card;
+            position: relative;
+            top: 1em;
+        }
+    }
+}
+
+.attribution {
+    padding: 2em;
+    font-size: 11px;
+    text-align: center;
+    line-height: 2em;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.attribution a {
+    color: var(--Very-Dark-Magenta);
+}
+
+@media screen and (hover:hover) {
+    .attribution a:hover{
+        color: var(--Soft-Pink);
+    }
+}
+
+@media screen and (max-width: 1420px){
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px auto;
+        padding: 0em;
+    }
+    
+    .cards{
+        flex-direction: column;
+        .card{
+            margin: 1em 0;
+            &--first{
+                top: 0em;
+                margin-left: 9em;
+                align-self:flex-start;
+            }
+            &--second{
+                top: 0em;
+                margin-right: 9em;
+                align-self:flex-end;  
+            }
+            &--third{
+                top: 0em;
+                margin-left: 9em;
+                align-self:flex-start;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .principal{
+        .title{
+            padding-right: 2em;
+        }
+        .describe{
+            padding-right: 5em;
+        }
+    }
+
+    .ratings{
+        .stats{
+            &--first{
+                right: 0em;
+            }
+            &--second{
+                right: 0em;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5em;
+        padding: 0em 2em;
+        font-weight: 500;
+    }
+    .principal{
+        text-align: center;
+        .title{
+            padding: 0;
+        }
+        .describe{
+            padding: 0;
+        }
+    }
+    .ratings{
+        align-items: center;
+        .stats{
+            box-sizing: border-box;
+            &__rated{
+                margin-left: 0em;
+            }
+        }
+    }
+    .cards{
+        .card{
+            min-width: 20em;
+            height: auto;
+            &--first{
+                margin-left: 0em;
+                align-self:center;
+            }
+            &--second{
+                margin-right: 0em;
+                align-self:center;
+            }
+            &--third{
+                margin-left: 0em;
+                align-self:center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px){   
+    body{
+        padding: 2em 1.1em;
+        background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    }
+    main{
+        padding: 0;
+    }
+    .principal{
+        .title{
+            font-size: 2rem;
+        }
+    }
+    .ratings{
+        .stats{
+            flex-direction: column;
+            width: 100%;
+            &__rated{
+                margin-top: 1em;
+            }
+        }
+    }
+}
